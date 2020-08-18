@@ -47,7 +47,7 @@ export default class ListaNegraApi {
     }
 
     async alterar(id, ln){
-        const resp = await api.alterar('listanegra/${id}', ln);
+        const resp = await api.put('listanegra/${id}', ln);
 
         return resp.data;
     }
